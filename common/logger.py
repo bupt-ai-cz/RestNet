@@ -19,10 +19,6 @@ class AverageMeter:
             self.class_ids_interest = dataset.class_ids
             self.class_ids_interest = torch.tensor(self.class_ids_interest).cuda()
             self.nclass = 1000
-        elif self.benchmark == 'deepglobe':
-            self.class_ids_interest = dataset.class_ids
-            self.class_ids_interest = torch.tensor(self.class_ids_interest).cuda()
-            self.nclass = 6
         elif self.benchmark == 'isic':
             self.class_ids_interest = dataset.class_ids
             self.class_ids_interest = torch.tensor(self.class_ids_interest).cuda()
