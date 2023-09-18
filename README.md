@@ -16,6 +16,12 @@
     ```
     Download PASCAL VOC2012 SDS extended mask annotations from [[Google Drive](https://drive.google.com/file/d/10zxG2VExoEZUeyQl_uXga2OWHjGeZaf2/view?usp=sharing)].
 
+* **FSS-1000**:
+
+    Home: https://github.com/HKUSTCV/FSS-1000
+
+    Direct: https://drive.google.com/file/d/16TgqOeI_0P41Eh3jWQlxlRXG9KIqtMgI/view
+
 * **ISIC2018**:
 
     Home: http://challenge2018.isic-archive.com
@@ -27,12 +33,6 @@
     Home: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4256233/
 
     Direct: https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels
-
-* **FSS-1000**:
-
-    Home: https://github.com/HKUSTCV/FSS-1000
-
-    Direct: https://drive.google.com/file/d/16TgqOeI_0P41Eh3jWQlxlRXG9KIqtMgI/view
 
 
 ## Training
@@ -47,7 +47,15 @@
 > ```
 
 ## Testing
-> ### 1. ISIC
+> ### FSS-1000
+> ```bash
+> python test.py --backbone {vgg16, resnet50} 
+>                --benchmark fss 
+>                --nshot {1, 5} 
+>                --load "path_to_trained_model/best_model.pt"
+> ```
+
+> ### ISIC
 > ```bash
 > python test.py --backbone {vgg16, resnet50} 
 >                --fold {0, 1, 2, 3} 
@@ -56,7 +64,7 @@
 >                --load "path_to_trained_model/best_model.pt"
 > ```
 
-> ### 2. Chest X-ray
+> ### Chest X-ray
 > ```bash
 > python test.py --backbone {vgg16, resnet50} 
 >                --benchmark lung 
@@ -64,13 +72,7 @@
 >                --load "path_to_trained_model/best_model.pt"
 > ```
 
-> ### 3. FSS-1000
-> ```bash
-> python test.py --backbone {vgg16, resnet50} 
->                --benchmark fss 
->                --nshot {1, 5} 
->                --load "path_to_trained_model/best_model.pt"
-> ```
+
 
 ## Acknowledgement
 The implementation is highly based on [HSNet](https://github.com/juhongm999/hsnet) and [PATNet](https://github.com/slei109/PATNet/tree/master). <br>
