@@ -79,7 +79,7 @@ The implementation is highly based on [HSNet](https://github.com/juhongm999/hsne
 Thank them for their great work.
 
 
-## 5. Citation
+## Citation
 ```shell
 @misc{huang2023restnet,
       title={RestNet: Boosting Cross-Domain Few-Shot Segmentation with Residual Transformation Network}, 
@@ -91,7 +91,7 @@ Thank them for their great work.
 }
 ```
 
-## 6. Contact
+## Contact
 
 Xinyang Huang ([hsinyanghuang7@gmail.com](hsinyanghuang7@gmail.com))
 
