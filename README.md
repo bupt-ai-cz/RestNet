@@ -1,5 +1,6 @@
 # RestNet: Boosting Cross-Domain Few-Shot Segmentation with Residual Transformation Network
 [[Paper]](https://arxiv.org/abs/2308.13469)
+[[Checkpoint]](https://drive.google.com/drive/folders/18nvsICSZziMIddKNvnyQjZpDWhblByu8?usp=sharing)
 
 <p align="middle">
     <img src="image/overview.png">
@@ -46,7 +47,6 @@
 > ```
 
 ## Testing
-[[Checkpoint]](https://drive.google.com/drive/folders/18nvsICSZziMIddKNvnyQjZpDWhblByu8?usp=sharing)
 > ### 1. ISIC
 > ```bash
 > python test.py --backbone {vgg16, resnet50} 
