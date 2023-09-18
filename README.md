@@ -46,7 +46,7 @@
 > ```
 
 ## Testing
-
+[[Checkpoint]](https://drive.google.com/drive/folders/18nvsICSZziMIddKNvnyQjZpDWhblByu8?usp=sharing)
 > ### 1. ISIC
 > ```bash
 > python test.py --backbone {vgg16, resnet50} 
