@@ -4,7 +4,7 @@ import argparse
 import torch.nn as nn
 import torch
 
-from model.newpatnet import PATNetwork
+from model.restnet import RestNetwork
 from common.logger import Logger, AverageMeter
 from common.evaluation import Evaluator
 from common import utils
