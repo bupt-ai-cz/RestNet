@@ -14,7 +14,7 @@ import cv2
 
 class RestNetwork(nn.Module):
     def __init__(self, backbone):
-        super(PATNetwork, self).__init__()
+        super(RestNetwork, self).__init__()
         self.backbone_type = backbone
         if backbone == 'vgg16':
             self.backbone = vgg.vgg16(weights=vgg.VGG16_Weights.DEFAULT)
