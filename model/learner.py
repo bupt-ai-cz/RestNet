@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
-from .base.conv4d_new import CenterPivotConv4d as Conv4d
+from .base.conv4d import CenterPivotConv4d as Conv4d
 
 class HPNLearner(nn.Module):
     def __init__(self, inch):
